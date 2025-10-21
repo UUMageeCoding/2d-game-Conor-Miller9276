@@ -1,43 +1,10 @@
 fileFormatVersion: 2
-guid: 9de764f2c671ee448958b03d37c46bba
+guid: 39825324559c5de47abf18b1a5e9526f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4534810592809177352
-    second: slime_green_0
-  - first:
-      213: 4942287488895418986
-    second: slime_green_1
-  - first:
-      213: 3955944898913636364
-    second: slime_green_2
-  - first:
-      213: -6882059581611173700
-    second: slime_green_3
-  - first:
-      213: -1727531430047209334
-    second: slime_green_4
-  - first:
-      213: -6164068006029348930
-    second: slime_green_5
-  - first:
-      213: 1922484197113216012
-    second: slime_green_6
-  - first:
-      213: -8128283161498370404
-    second: slime_green_7
-  - first:
-      213: -3755709670084083772
-    second: slime_green_8
-  - first:
-      213: -7670263608759839954
-    second: slime_green_9
-  - first:
-      213: 3803185021826026693
-    second: slime_green_10
-  - first:
-      213: -1230229059110720307
-    second: slime_green_11
+      213: 6204634976336177265
+    second: Lampost-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -80,11 +47,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 15
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,35 +100,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime_green_0
+      name: Lampost-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 47
-        width: 25
-        height: 25
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 83e2c58fe7b389f48b257ab27a23f642
-      internalID: -151878791
+      spriteID: 1786b7d23aa4b1650800000000000000
+      internalID: 6204634976336177265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_green_1
+      name: Lampost-Sheet_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 47
-        width: 25
-        height: 25
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,42 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 560835af6b0d72041bcd8b3e6be91900
-      internalID: 279998948
+      spriteID: 1bfc123fde0575e44b9777cf8db5972d
+      internalID: 2011954508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_green_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 47
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b40f1671c1b702e4dabc8358873bd369
-      internalID: -163359958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_green_3
+      name: Lampost-Sheet_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 22
-        width: 25
-        height: 25
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ded65a1e6f68084987fdf099d687ce9
-      internalID: 1462310007
+      spriteID: b6997b231dae5144b98a94bb0e6faf4f
+      internalID: 1858976761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_green_4
+      name: Lampost-Sheet_3
       rect:
         serializedVersion: 2
-        x: 25
-        y: 22
-        width: 25
-        height: 25
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4d8d8aec668d854d9a8e468becff209
-      internalID: 1072037858
+      spriteID: 9f6533089346ec04eb0d841889963513
+      internalID: -1967857358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_green_5
+      name: Lampost-Sheet_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 22
-        width: 25
-        height: 25
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4ab8faafb1170147a21dc595b611299
-      internalID: 1339291091
+      spriteID: 8d7bd15f60428cb4d9d7cd6079edbb63
+      internalID: -1182937304
       vertices: []
       indices: 
       edges: []
@@ -268,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c4502750ae239ad4b9bde16c78d2e42f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -278,14 +223,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":25.0,"y":25.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      slime_green_0: -151878791
-      slime_green_1: 279998948
-      slime_green_2: -163359958
-      slime_green_3: 1462310007
-      slime_green_4: 1072037858
-      slime_green_5: 1339291091
+      Lampost-Sheet_0: 6204634976336177265
+      Lampost-Sheet_1: 2011954508
+      Lampost-Sheet_2: 1858976761
+      Lampost-Sheet_3: -1967857358
+      Lampost-Sheet_4: -1182937304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

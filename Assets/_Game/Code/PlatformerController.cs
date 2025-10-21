@@ -1,4 +1,7 @@
+using System;
+using UnityEditor.Tilemaps;
 using UnityEngine;
+
 
 public class PlatformerController : MonoBehaviour
 {
@@ -10,8 +13,15 @@ public class PlatformerController : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
+
+    [SerializeField] private Animator knightAnimator;
+
+    [SerializeField] private SpriteRenderer knightSpriteRenderer;
+
+    [SerializeField] private bool freezeAnimation = false;
     
-    private Rigidbody2D rb;
+
+        private Rigidbody2D rb;
     private bool isGrounded;
     private float moveInput;
     
@@ -23,21 +33,42 @@ public class PlatformerController : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 3f;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        knightAnimator = gameObject.GetComponent<Animator>();
+        knightSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     
     void Update()
     {
         // Get horizontal input
         moveInput = Input.GetAxisRaw("Horizontal");
-        
+
         // Check if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        
+
         // Jump input
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+
+        if (moveInput > 0 || moveInput < 0)
+        {
+            knightAnimator.SetBool("isWalking", true);
+        }
+        else knightAnimator.SetBool("isWalking", false);
+        
+        if(isGrounded != true)
+        {
+            knightAnimator.SetBool("isWalking", false);
+        }
+
+        if (moveInput < 0)
+        {
+             knightSpriteRenderer.flipX = true;
+        }
+        else knightSpriteRenderer.flipX = false;
+        
     }
     
     void FixedUpdate()
