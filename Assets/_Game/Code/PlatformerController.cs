@@ -1,14 +1,16 @@
 using System;
+using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
-
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.UIElements;
 
 public class PlatformerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 12f;
-    
+
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
@@ -19,16 +21,15 @@ public class PlatformerController : MonoBehaviour
     [SerializeField] private SpriteRenderer knightSpriteRenderer;
 
     [SerializeField] private bool freezeAnimation = false;
-    
 
-        private Rigidbody2D rb;
+    private Rigidbody2D rb;
     private bool isGrounded;
     private float moveInput;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+
         // Set to Dynamic with gravity
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 3f;
@@ -37,7 +38,7 @@ public class PlatformerController : MonoBehaviour
         knightAnimator = gameObject.GetComponent<Animator>();
         knightSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
-    
+
     void Update()
     {
         // Get horizontal input
@@ -57,26 +58,28 @@ public class PlatformerController : MonoBehaviour
             knightAnimator.SetBool("isWalking", true);
         }
         else knightAnimator.SetBool("isWalking", false);
-        
-        if(isGrounded != true)
+
+        if (isGrounded != true)
         {
             knightAnimator.SetBool("isWalking", false);
         }
 
         if (moveInput < 0)
         {
-             knightSpriteRenderer.flipX = true;
+            knightSpriteRenderer.flipX = true;
         }
         else knightSpriteRenderer.flipX = false;
-        
+
+
+
     }
-    
+
     void FixedUpdate()
     {
         // Apply horizontal movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
-    
+
     // Visualise ground check in editor
     void OnDrawGizmosSelected()
     {
@@ -87,3 +90,5 @@ public class PlatformerController : MonoBehaviour
         }
     }
 }
+
+

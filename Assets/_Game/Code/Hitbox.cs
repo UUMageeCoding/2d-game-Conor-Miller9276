@@ -8,7 +8,6 @@ public class Hitbox : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Debug.Log("");
         }
     }
 
