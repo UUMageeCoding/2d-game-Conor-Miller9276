@@ -20,10 +20,12 @@ public class EnemyPatrol : MonoBehaviour
     void Start()
     {
         startPos = transform.position.x;
+        
     }
 
     void Update()
     {
+        SlimeSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         if (movingRight)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -36,7 +38,7 @@ public class EnemyPatrol : MonoBehaviour
             if (transform.position.x <= startPos - patrolDistance)
                 movingRight = true;
         }
-        if(movingRight)
+        if(transform.position.x <= 5)
         {
             SlimeSpriteRenderer.flipX = false;
         }
