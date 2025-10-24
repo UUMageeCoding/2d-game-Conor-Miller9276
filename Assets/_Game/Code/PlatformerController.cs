@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class PlatformerController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float moveSpeed = 8f;
     [SerializeField] private float jumpForce = 12f;
 
     [Header("Ground Check")]
@@ -70,8 +70,16 @@ public class PlatformerController : MonoBehaviour
         }
         else knightSpriteRenderer.flipX = false;
 
+        if (!isGrounded && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = 15f;
+            
+        }
 
-
+        if (isGrounded == true)
+        {
+            moveSpeed = 8f;
+        }
     }
 
     void FixedUpdate()
