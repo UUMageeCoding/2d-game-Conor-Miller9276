@@ -8,6 +8,11 @@ public class Hitbox : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(gameObject);
+
+            if (true)
+            {
+                Debug.Log("Player found 1/8 Fallen Knights");
+            }
         }
     }
 

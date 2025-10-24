@@ -73,7 +73,7 @@ public class PlatformerController : MonoBehaviour
         if (!isGrounded && Input.GetKeyDown(KeyCode.LeftShift))
         {
             moveSpeed = 15f;
-            
+
         }
 
         if (isGrounded == true)
@@ -98,5 +98,4 @@ public class PlatformerController : MonoBehaviour
         }
     }
 }
-
 
