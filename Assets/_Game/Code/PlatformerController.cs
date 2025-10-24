@@ -78,7 +78,7 @@ public class PlatformerController : MonoBehaviour
 
         if (isGrounded == true)
         {
-            moveSpeed = 8f;
+            moveSpeed = 7f;
         }
     }
 
