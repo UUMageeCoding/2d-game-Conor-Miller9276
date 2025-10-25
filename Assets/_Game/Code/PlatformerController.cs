@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.UIElements;
 
 public class PlatformerController : MonoBehaviour
@@ -79,6 +80,15 @@ public class PlatformerController : MonoBehaviour
         if (isGrounded == true)
         {
             moveSpeed = 7f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl) == true)
+        {
+            jumpForce = 16f;
+        }
+        if (!Input.GetKeyUp(KeyCode.LeftControl) == false)
+        {
+            jumpForce = 12f;
         }
     }
 
