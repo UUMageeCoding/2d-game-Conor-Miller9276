@@ -11,7 +11,7 @@ public class Hitbox : MonoBehaviour
 
             if (true)
             {
-                Debug.Log("Player found 1/8 Fallen Knights");
+                Debug.Log("Player collected the Coin");
             }
         }
     }

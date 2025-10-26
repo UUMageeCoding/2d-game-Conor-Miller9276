@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
 
 {
     public int maxHealth = 100;
-    int Health;
+    int Health = 100;
 
     public bool hasDied;
 
