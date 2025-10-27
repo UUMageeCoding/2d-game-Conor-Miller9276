@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
 
 {
     public int maxHealth = 100;
-    int Health = 100;
+    public int Health = 100;
 
     public bool hasDied;
 
@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
             gameManager.gameOver();
             Debug.Log("You Died");
         }
+        
     }
 }
 
