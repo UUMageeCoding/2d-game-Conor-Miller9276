@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Hitbox : MonoBehaviour
+public class FallenKnight : MonoBehaviour
 
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
