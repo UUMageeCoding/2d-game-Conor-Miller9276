@@ -1,25 +1,24 @@
 using UnityEngine;
 
-public class FallenKnight : MonoBehaviour
+public class Sword : MonoBehaviour
 
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void OnTriggerEnter2D(Collider2D FallenKnight)
+    void OnTriggerEnter2D(Collider2D Sword)
     {
-        if (FallenKnight.CompareTag("Player"))
+        if (Sword.CompareTag("Player"))
         {
             Destroy(gameObject);
 
             if (true)
             {
-                Debug.Log("Player has saved the Fallen Knight");
-            
+                Debug.Log("Player has collected the Fallen Knights Sword");
+
             }
 
         }
 
-  
+
     }
 
 }
-
